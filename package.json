@@ -4,5 +4,11 @@
     "main": "index.js",
     "repository": "https://github.com/hideo54/NadaCultureFest2017.git",
     "author": "hideo54",
-    "license": "Apache-2.0"
+    "license": "Apache-2.0",
+    "scripts": {
+        "build": "pug src/ --out dist/"
+    },
+    "dependencies": {
+        "pug-cli": "^1.0.0-alpha6"
+    }
 }
