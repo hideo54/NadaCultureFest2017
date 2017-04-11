@@ -1,0 +1,8 @@
+{
+    "name": "NadaCultureFest2017",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/hideo54/NadaCultureFest2017.git",
+    "author": "hideo54",
+    "license": "Apache-2.0"
+}
