@@ -12,14 +12,21 @@ gulp.task('pug', () => {
 });
 
 gulp.task('less', () => {
-    return gulp.src('src/style.less')
+    return gulp.src('src/css/style.less')
         .pipe(less())
-        .pipe(gulp.dest('dist/'));
+        .pipe(gulp.dest('dist/css/'));
 });
 
-gulp.task('default', ['pug', 'less']);
+gulp.task('font-awesome', () => {
+    return gulp.src('font-awesome/less/font-awesome.less')
+        .pipe(less())
+        .pipe(gulp.dest('dist/css/'));
+});
+
+gulp.task('default', ['pug', 'less', 'font-awesome']);
 
 gulp.task('watch', () => {
     gulp.watch(['src/[^_]*.pug', 'data.json'], ['pug']);
-    gulp.watch('src/style.less', ['less']);
+    gulp.watch('src/css/style.less', ['less']);
+    gulp.watch('font-awesome/less/font-awesome.less', ['font-awesome']);
 });

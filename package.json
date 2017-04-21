@@ -6,6 +6,7 @@
     "author": "hideo54",
     "license": "Apache-2.0",
     "scripts": {
+        "fonts": "cp -R font-awesome/fonts/ dist/fonts/",
         "build": "gulp",
         "watch": "gulp watch"
     },
