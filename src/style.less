@@ -1,7 +1,113 @@
-h1, p {
-    font-family: sans-serif;
+// Original Coloring
+@black: #222222;
+@shadow: rgba(0, 0, 0, 0.2);
+
+// Coloring by https://flatuicolors.com
+@silver: #bdc3c7;
+@clouds: #ecf0f1;
+@greensea: #16a085;
+@nephritis: #27ae60;
+@belizehole: #2980b9;
+@wisteria: #8e44ad;
+@orange: #f39c12;
+@pumpkin: #d35400;
+
+@widthborder: 500px;
+
+h1, h2, p {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    color: @black;
 }
 
-h1 {
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 1em 0;
     text-align: center;
+    background-color: @clouds;
+    h1#title {
+        margin: 0.5em 0;
+        font-size: 3em;
+    }
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1em;
+    h2 {
+        margin: 0.5em 0;
+    }
+    .places {
+        overflow-x: auto;
+        white-space: nowrap;
+        border: inset 2px @silver;
+        a.place {
+            display: inline-block;
+            width: 150px;
+            margin: 10px;
+            border: outset 1px @silver;
+            box-shadow: 2px 2px 2px @shadow;
+            text-align: center;
+            text-decoration: none;
+            p {
+                margin: 10px;
+            }
+        }
+    }
+    section.links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: flex-start;
+        a.square {
+            display: block;
+            @media screen and (max-width: @widthborder) {
+                width: 120px;
+                height: 120px;
+            }
+            width: 200px;
+            height: 200px;
+            margin: 0.5em;
+            border-radius: 10%;
+            text-decoration: none;
+            &[href='projects'] {
+                background-color: @pumpkin;
+            }
+            &[href='goods'] {
+                background-color: @orange;
+            }
+            &[href='greeting'] {
+                background-color: @wisteria;
+            }
+            &[href='map'] {
+                background-color: @belizehole;
+            }
+            &[href='gallery'] {
+                background-color: @nephritis;
+            }
+            &[href='access'] {
+                background-color: @greensea;
+            }
+            p {
+                font-size: 1.3em;
+                @media screen and (max-width: @widthborder) {
+                    font-size: 1em;
+                }
+                color: white;
+                text-align: center;
+            }
+        }
+    }
+}
+
+iframe.access {
+    width: 100%;
+    height: 60vmin;
+    max-height: 500px;
 }
