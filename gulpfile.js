@@ -20,6 +20,6 @@ gulp.task('less', () => {
 gulp.task('default', ['pug', 'less']);
 
 gulp.task('watch', () => {
-    gulp.watch('src/[^_]*.pug', ['pug']);
+    gulp.watch(['src/[^_]*.pug', 'data.json'], ['pug']);
     gulp.watch('src/style.less', ['less']);
 });
