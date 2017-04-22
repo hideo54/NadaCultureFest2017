@@ -7,7 +7,7 @@
     1. `wget http://fontawesome.io/assets/font-awesome-4.7.0.zip`
     2. `unzip font-awesome-4.7.0.zip`
     3. `mv font-awesome-4.7.0 font-awesome`
-3. `yarn run build`
+3. `yarn run install`
 4. `dist/`ディレクトリをルートディレクトリに設定
 
 ## 作成者連絡先
