@@ -1,6 +1,14 @@
 // Original Coloring
 @black: #222222;
 @shadow: rgba(0, 0, 0, 0.2);
+@seekit-red1: #ee302d;
+@seekit-red2: #f26641;
+@seekit-red3: #faa95b;
+@seekit-red4: #ffee74;
+@seekit-green1: #008621;
+@seekit-green2: #40ae3c;
+@seekit-green3: #80d758;
+@seekit-green4: #c0ff74;
 
 // Coloring by https://flatuicolors.com
 @silver: #bdc3c7;
@@ -14,7 +22,7 @@
 
 @widthborder: 500px;
 
-h1, h2, p {
+h1, h2, a, p {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     color: @black;
 }
@@ -37,10 +45,13 @@ header {
 main, footer {
     max-width: 800px;
     margin: 0 auto;
-    padding: 1em;
+    padding: 0 1em;
 }
 
 main {
+    section {
+        margin-bottom: 2em;
+    }
     h2 {
         margin: 0.5em 0;
         i.fa {
@@ -49,6 +60,7 @@ main {
     }
     .places {
         overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
         white-space: nowrap;
         border: inset 2px @silver;
         a.place {
@@ -64,7 +76,38 @@ main {
             }
         }
     }
-    section.links {
+    .days {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 40%;
+            max-width: 200px;
+            height: 80px;
+            font-size: 1.5em;
+            @media screen and (max-width: @widthborder) {
+                font-size: 1.2em;
+            }
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            &#day1 {
+                background-color: @seekit-red1;
+            }
+            &#day2 {
+                background-color: @seekit-green1;
+            }
+            p {
+                margin: 0;
+                color: white;
+            }
+        }
+    }
+    section .links {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
