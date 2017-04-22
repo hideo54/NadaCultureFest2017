@@ -7,8 +7,8 @@
     "license": "Apache-2.0",
     "scripts": {
         "install": "yarn run build && yarn run images && yarn run fonts",
-        "images": "cp -R src/images dist/images/",
-        "fonts": "cp -R font-awesome/fonts/ dist/fonts/",
+        "images": "cp -R src/images dist/",
+        "fonts": "cp -R font-awesome/fonts/ dist/",
         "build": "gulp",
         "watch": "gulp watch"
     },
