@@ -1,6 +1,7 @@
 // Original Coloring
 @black: #222222;
 @shadow: rgba(0, 0, 0, 0.2);
+@black-shadow: rgba(0,0, 0, 0.8);
 @seekit-red1: #ee302d;
 @seekit-red2: #f26641;
 @seekit-red3: #faa95b;
@@ -22,7 +23,7 @@
 
 @widthborder: 500px;
 
-h1, h2, a, p {
+h1, h2, p, a, li {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     color: @black;
 }
@@ -30,23 +31,45 @@ h1, h2, a, p {
 body {
     margin: 0;
     padding: 0;
-}
-
-header {
-    padding: 1em 0;
-    text-align: center;
-    background-color: @clouds;
-    h1#title {
-        margin: 0.5em 0;
-        font-size: 3em;
+    header.top {
+        padding: 1em 0;
+        text-align: center;
+        background-color: @clouds;
+        h1#title {
+            margin: 0.5em 0;
+            font-size: 3em;
+        }
+    }
+    header.sub {
+        width: 100%;
+        background-color: @black-shadow;
+        a {
+            display: block;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1em;
+            img {
+                display: inline-block;
+                margin: 0.5em 0;
+                vertical-align: bottom;
+            }
+            p {
+                display: inline-block;
+                margin: 0.5em 0;
+                vertical-align: bottom;
+                font-size: 1.2em;
+                color: white;
+            }
+        }
+    }
+    main, footer {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 1em;
     }
 }
 
-main, footer {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 1em;
-}
+
 
 main {
     section {
