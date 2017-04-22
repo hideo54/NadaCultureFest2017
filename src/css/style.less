@@ -34,12 +34,18 @@ header {
     }
 }
 
-main {
+main, footer {
     max-width: 800px;
     margin: 0 auto;
     padding: 1em;
+}
+
+main {
     h2 {
         margin: 0.5em 0;
+        i.fa {
+            margin-right: 0.5em;
+        }
     }
     .places {
         overflow-x: auto;
@@ -66,7 +72,9 @@ main {
         align-items: flex-start;
         align-content: flex-start;
         a.square {
-            display: block;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             @media screen and (max-width: @widthborder) {
                 width: 120px;
                 height: 120px;
@@ -99,10 +107,25 @@ main {
                 @media screen and (max-width: @widthborder) {
                     font-size: 1em;
                 }
+                margin: 0;
+                margin-bottom: 1em;
+                color: white;
+                text-align: center;
+            }
+            i.fa {
+                display: block;
+                font-size: 4em;
+                margin: 0 auto;
                 color: white;
                 text-align: center;
             }
         }
+    }
+}
+
+footer {
+    p {
+        text-align: center;
     }
 }
 
