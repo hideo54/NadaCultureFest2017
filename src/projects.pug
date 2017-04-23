@@ -1,0 +1,13 @@
+extends _subpage.pug
+
+block head
+    title 企画一覧
+
+block main
+    h1 企画一覧
+    each head in projects
+        h2= head.head
+        ul
+        each project in head.projects
+            li.project
+                a(href='projects/'+project.address)= project.name
