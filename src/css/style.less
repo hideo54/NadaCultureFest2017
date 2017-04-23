@@ -23,7 +23,8 @@
 
 @widthborder: 500px;
 
-h1, h2, p, a, li {
+// Common
+h1, h2, h3, p, a, li {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     color: @black;
 }
@@ -31,47 +32,30 @@ h1, h2, p, a, li {
 body {
     margin: 0;
     padding: 0;
-    header.top {
-        padding: 1em 0;
-        text-align: center;
-        background-color: @clouds;
-        h1#title {
-            margin: 0.5em 0;
-            font-size: 3em;
-        }
-        h1#date {
-            font-size: 1.8em;
-        }
-    }
-    header.sub {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        height: 50px;
-        background-color: @black-shadow;
-        a {
-            display: block;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 1em;
-            img {
-                display: inline-block;
-                margin: 10px 0;
-                vertical-align: bottom;
-            }
-            p {
-                display: inline-block;
-                margin: 10px 0;
-                vertical-align: bottom;
-                font-size: 1.4em;
-                color: white;
-            }
-        }
-    }
     main, footer {
         max-width: 800px;
         margin: 0 auto;
         padding: 0 1em;
+    }
+    footer {
+        p {
+            text-align: center;
+        }
+    }
+}
+
+// For toppage
+
+header.top {
+    padding: 1em 0;
+    text-align: center;
+    background-color: @clouds;
+    h1#title {
+        margin: 0.5em 0;
+        font-size: 3em;
+    }
+    h1#date {
+        font-size: 1.8em;
     }
 }
 
@@ -196,15 +180,49 @@ main.top {
     }
 }
 
+// Common to subpages
+
+header.sub {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: @black-shadow;
+    a {
+        display: block;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 1em;
+        img {
+            display: inline-block;
+            margin: 10px 0;
+            vertical-align: bottom;
+        }
+        p {
+            display: inline-block;
+            margin: 10px 0;
+            vertical-align: bottom;
+            font-size: 1.4em;
+            color: white;
+        }
+    }
+}
+
 main.sub {
     padding-top: 50px;
 }
 
-footer {
-    p {
-        text-align: center;
+// For projects page
+
+.project {
+    a {
+        display: inline-block;
+        margin-top: 0;
+        text-align: right;
     }
 }
+
+// For greeting page
 
 img#kamura {
     display: block;
@@ -213,6 +231,8 @@ img#kamura {
     height: auto;
     margin: 0 auto;
 }
+
+// For access page
 
 img.access {
     max-width: 100%;
