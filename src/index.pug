@@ -6,7 +6,7 @@ html
     body
         header.top
             h1#caption 第71回灘校文化祭
-            img(src='images/logo.svg' alt='Logo' width='200px' height='150px')
+            img(src='/images/logo.svg' alt='Logo' width='200px' height='150px')
             h1#title SEEK IT!
             h1#date 5月2日(火)・3日(水・祝)
         main.top
@@ -16,37 +16,37 @@ html
                     | エリアで探す
                 .places
                     each place in places
-                        a(href=`${place[0]}/`).place
-                            img(src=`images/${place[0]}.png` alt=place[1] width='150px' height='100px')
+                        a(href=`/area/${place[0]}/`).place
+                            img(src=`/images/${place[0]}.png` alt=place[1] width='150px' height='100px')
                             p= place[1]
             section
                 h2
                     i.fa.fa-clock-o
                     | 時間で探す
                 .days
-                    a(href='day1')#day1: p 1日目
-                    a(href='day2')#day2: p 2日目
+                    a(href='/day1')#day1: p 1日目
+                    a(href='/day2')#day2: p 2日目
             section
                 h2
                     i.fa.fa-ellipsis-h
                     | その他
                 .links
-                    a(href='projects').square
+                    a(href='/projects').square
                         p 企画一覧を見る
                         i.fa.fa-list
-                    a(href='goods').square
+                    a(href='/goods').square
                         p グッズ販売
                         i.fa.fa-pencil
-                    a(href='greeting').square
+                    a(href='/greeting').square
                         p 文化委員長挨拶
                         i.fa.fa-comment
-                    a(href='map').square
+                    a(href='/map').square
                         p 校内マップ
                         i.fa.fa-map
-                    a(href='gallery').square
+                    a(href='/gallery').square
                         p ギャラリー
                         i.fa.fa-picture-o
-                    a(href='access').square
+                    a(href='/access').square
                         p アクセス
                         i.fa.fa-map-marker
         footer
