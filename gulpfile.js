@@ -3,7 +3,7 @@ const pug = require('gulp-pug');
 const less = require('gulp-less');
 
 gulp.task('pug', () => {
-    return gulp.src('src/*/[^_]*.pug')
+    return gulp.src(['src/[^_]*.pug', 'src/*/[^_]*.pug'])
         .pipe(pug({
             data: require('./data.json'),
             pretty: true
