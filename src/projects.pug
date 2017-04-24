@@ -8,6 +8,6 @@ block main
     each head in projects
         h2= head.head
         ul
-        each project in head.projects
-            li.project
-                a(href='projects/'+project.address)= project.name
+            each project in head.projects
+                li.project
+                    a(href='projects/'+project.address)= project.name
