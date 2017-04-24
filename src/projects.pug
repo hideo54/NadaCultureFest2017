@@ -10,4 +10,4 @@ block main
         ul
             each project in head.projects
                 li.project
-                    a(href='projects/'+project.address)= project.name
+                    a(href='project/'+project.address) #{project.name} (#{project.place})
