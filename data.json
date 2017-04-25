@@ -13,7 +13,7 @@
     "projects": [
         {
             "head": "あ",
-            "projects": [
+            "contents": [
                 {
                     "address": "anime",
                     "name": "アニメ研究会",
@@ -48,7 +48,7 @@
         },
         {
             "head": "か",
-            "projects": [
+            "contents": [
                 {
                     "address": "chemistry",
                     "name": "化学研究部",
@@ -101,7 +101,7 @@
         },
         {
             "head": "さ",
-            "projects": [
+            "contents": [
                 {
                     "address": "picture",
                     "name": "写真同好会",
@@ -154,7 +154,7 @@
         },
         {
             "head": "た",
-            "projects": [
+            "contents": [
                 {
                     "address": "tabletennis",
                     "name": "卓球部",
@@ -201,7 +201,7 @@
         },
         {
             "head": "な",
-            "projects": [
+            "contents": [
                 {
                     "address": "igo",
                     "name": "灘校囲碁部",
@@ -218,7 +218,7 @@
         },
         {
             "head": "は",
-            "projects": [
+            "contents": [
                 {
                     "address": "npca",
                     "name": "パソコン研究部",
@@ -247,7 +247,7 @@
         },
         {
             "head": "ま",
-            "projects": [
+            "contents": [
                 {
                     "address": "minitrain",
                     "name": "ミニ電車",
@@ -258,7 +258,7 @@
         },
         {
             "head": "や",
-            "projects": [
+            "contents": [
                 {
                     "address": "yo-yo",
                     "name": "ヨーヨー釣り",
@@ -269,7 +269,7 @@
         },
         {
             "head": "ら",
-            "projects": [
+            "contents": [
                 {
                     "address": "athletics",
                     "name": "陸上競技部",
@@ -286,7 +286,7 @@
         },
         {
             "head": "わ",
-            "projects": [
+            "contents": [
                 {
                     "address": "wandervogel",
                     "name": "ワンダーフォーゲル部",
@@ -297,7 +297,7 @@
         },
         {
             "head": "A-Z",
-            "projects": [
+            "contents": [
                 {
                     "address": "ess",
                     "name": "ESS部",

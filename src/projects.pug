@@ -5,9 +5,9 @@ block head
 
 block main
     h1 企画一覧
-    each head in projects
-        h2= head.head
+    each section in projects
+        h2= section.head
         ul
-            each project in head.projects
+            each project in section.contents
                 li.project
                     a(href='/project/'+project.address) #{project.name} (#{project.place})
