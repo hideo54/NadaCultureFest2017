@@ -1,7 +1,7 @@
 // Original Coloring
 @black: #222222;
 @shadow: rgba(0, 0, 0, 0.2);
-@black-shadow: rgba(0,0, 0, 0.8);
+@black-shadow: rgba(0, 0, 0, 0.8);
 @seekit-red1: #ee302d;
 @seekit-red2: #f26641;
 @seekit-red3: #faa95b;
@@ -47,15 +47,25 @@ body {
 // For toppage
 
 header.top {
-    padding: 1em 0;
     text-align: center;
-    background-color: @clouds;
-    h1#title {
-        margin: 0.5em 0;
-        font-size: 3em;
-    }
-    h1#date {
-        font-size: 1.8em;
+    background-image: url('/images/entrance.png');
+    background-position: center center;
+    background-size: cover;
+    .transparent {
+        padding: 1em 0;
+        background-color: rgba(16, 16, 16, 0.6);
+        h1#caption {
+            color: white;
+        }
+        h1#title {
+            margin: 0.5em 0;
+            font-size: 3em;
+            color: white;
+        }
+        h1#date {
+            font-size: 1.8em;
+            color: white;
+        }
     }
 }
 
