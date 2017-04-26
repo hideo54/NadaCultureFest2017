@@ -26,7 +26,7 @@ gulp.task('font-awesome', () => {
 gulp.task('default', ['pug', 'less', 'font-awesome']);
 
 gulp.task('watch', () => {
-    gulp.watch(['src/*.pug', 'src/*/*.pug', 'data.json'], 'pug');
-    gulp.watch('src/css/style.less', 'less');
-    gulp.watch('font-awesome/less/font-awesome.less', 'font-awesome');
+    gulp.watch(['src/*.pug', 'src/*/*.pug', 'data.json'], ['pug']);
+    gulp.watch('src/css/style.less', ['less']);
+    gulp.watch('font-awesome/less/font-awesome.less', ['font-awesome']);
 });
