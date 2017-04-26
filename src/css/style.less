@@ -29,6 +29,11 @@ h1, h2, h3, p, a, li {
     color: @black;
 }
 
+a {
+    text-decoration: none;
+    color: @pumpkin;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -40,6 +45,9 @@ body {
     footer {
         p {
             text-align: center;
+            &.ga {
+                font-size: 0.8em;
+            }
         }
     }
 }
@@ -90,7 +98,6 @@ main.top {
             border: outset 1px @silver;
             box-shadow: 5px 5px 5px @shadow;
             text-align: center;
-            text-decoration: none;
             p {
                 margin: 10px;
             }
@@ -114,7 +121,6 @@ main.top {
             }
             border-radius: 10px;
             text-align: center;
-            text-decoration: none;
             &#day1 {
                 background-color: @seekit-red1;
             }
@@ -146,7 +152,6 @@ main.top {
             height: 200px;
             margin: 0.5em;
             border-radius: 10%;
-            text-decoration: none;
             &[href='/projects'] {
                 background-color: @pumpkin;
             }
@@ -231,9 +236,7 @@ li.project {
     a {
         display: inline-block;
         margin-top: 0;
-        color: @pumpkin;
         text-align: right;
-        text-decoration: none;
     }
 }
 
