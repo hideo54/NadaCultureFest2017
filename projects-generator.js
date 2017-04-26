@@ -15,6 +15,6 @@ block main
     p ${project.place}
     //- ここにマップを入れる
 `;
-        fs.writeFile(`src/project/${project.address}.pug`, text);
+        fs.writeFile(`src/projects/${project.address}.pug`, text);
     }
 }
