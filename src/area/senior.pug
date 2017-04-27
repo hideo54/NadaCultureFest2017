@@ -5,4 +5,14 @@ block head
 
 block main
     h1 高校棟
-    p 作成中です。
+    h2 高校棟の企画一覧
+    table.project
+        tr
+            th.name 企画名
+            th.place 場所
+        each section in projects
+            each project in section.contents
+                if project.place.indexOf('高校棟') !== -1
+                    tr
+                        td.name: a(href='/projects/'+project.address) #{project.name}
+                        td.place #{project.place}

@@ -5,4 +5,12 @@ block head
 
 block main
     h1 大講堂
-    p 作成中です。
+    h2 大講堂の企画一覧
+    table.project
+        tr
+            th.name 企画名
+        each section in projects
+            each project in section.contents
+                if project.place.indexOf('本館') !== -1
+                    tr
+                        td.name: a(href='/projects/'+project.address) #{project.name}
