@@ -233,12 +233,20 @@ table.project {
     min-width: 300px;
     width: 70%;
     tr {
+        line-height: 2;
         &:nth-child(odd) {
             background-color: @clouds;
         }
         td {
             &.name {
                 max-width: 500px;
+                a {
+                    display: block;
+                    width: 100%;
+                    &:hover {
+                        background-color: @silver;
+                    }
+                }
             }
             &.place {
                 width: 100px;
