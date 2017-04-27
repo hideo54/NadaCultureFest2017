@@ -1,4 +1,5 @@
 .DS_Store
+src/projects/
 font-awesome/
 node_modules/
 dist/
