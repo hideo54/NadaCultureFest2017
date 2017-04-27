@@ -10,9 +10,9 @@
 1. `yarn run install`
 installスクリプトで行われること:
     2. 各企画pugファイルの生成( `yarn run projects` )
-    2. 全pugファイル, lessファイルのコンパイル( `yarn run build`)
-    2. 全画像ファイルをdist/ディレクトリにコピー( `yarn run images`)
-    2. 全フォントファイルをdist.ディレクトリにコピー( `yarn run fonts`)
+    2. 全pugファイル, lessファイルのコンパイル( `yarn run build` )
+    2. 全画像ファイルをdist/ディレクトリにコピー( `yarn run images` )
+    2. 全フォントファイルをdist/ディレクトリにコピー( `yarn run fonts` )
 1. `dist/`ディレクトリをルートディレクトリに設定
 
 ## 作成者連絡先
