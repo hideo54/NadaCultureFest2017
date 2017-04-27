@@ -7,7 +7,11 @@ block main
     h1 企画一覧
     each section in projects
         h2= section.head
-        ul
+        table.project
+            tr
+                th.name 企画名
+                th.place 場所
             each project in section.contents
-                li.project
-                    a(href='/projects/'+project.address) #{project.name} (#{project.place})
+                tr
+                    td.name: a(href='/projects/'+project.address) #{project.name}
+                    td.place #{project.place}

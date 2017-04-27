@@ -24,7 +24,7 @@
 @widthborder: 500px;
 
 // Common
-h1, h2, h3, p, a, li {
+h1, h2, h3, p, a, li, th, td {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     color: @black;
 }
@@ -229,14 +229,21 @@ main.sub {
 
 // For projects page
 
-li.project {
-    margin: 0.5em 0;
-    padding-left: 2em;
-    text-indent: -1em;
-    a {
-        display: inline-block;
-        margin-top: 0;
-        text-align: right;
+table.project {
+    min-width: 300px;
+    width: 70%;
+    tr {
+        &:nth-child(odd) {
+            background-color: @clouds;
+        }
+        td {
+            &.name {
+                max-width: 500px;
+            }
+            &.place {
+                width: 100px;
+            }
+        }
     }
 }
 
