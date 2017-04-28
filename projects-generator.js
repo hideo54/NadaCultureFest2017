@@ -14,30 +14,33 @@ block main
     h2 場所
     p ${project.place}
     `;
+        const makeStyle = (id) => {
+            return `style g#${id} > rect:first-child, polyline:first-child { fill: #faa95b !important; }`
+        };
         if (project.place.indexOf('研修館') !== -1) {
             text += 'include ../../images/2f.svg';
             text += '\n    '
-            text += `style g#west > rect { fill: #faa95b !important; }`;
+            text += makeStyle('west');
         } else if (project.place.indexOf('2階') !== -1) {
             text += 'include ../../images/2f.svg';
             text += '\n    '
-            text += `style g#${project.address} > rect { fill: #faa95b !important; }`;
+            text += makeStyle(project.address);
         } else if (project.place.indexOf('3階') !== -1) {
             text += 'include ../../images/3f.svg';
             text += '\n    '
-            text += `style g#${project.address} > rect { fill: #faa95b !important; }`;
+            text += makeStyle(project.address);
         } else if (project.place.indexOf('4階') !== -1) {
             text += 'include ../../images/4f.svg';
             text += '\n    '
-            text += `style g#${project.address} > rect { fill: #faa95b !important; }`;
+            text += makeStyle(project.address);
         } else if (project.place === '視聴覚教室') {
             text += 'include ../../images/2f.svg';
             text += '\n    '
-            text += `style g#east > rect { fill: #faa95b !important; }`;
+            text += makeStyle('east');
         } else if (project.place === '中庭ステージ') {
             text += 'include ../../images/1f.svg';
             text += '\n    '
-            text += `style g#stage > rect { fill: #faa95b !important; }`;
+            text += makeStyle('stage');
         }
         fs.writeFile(`src/projects/${project.address}.pug`, text);
     }
