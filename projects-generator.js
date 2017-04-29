@@ -20,11 +20,11 @@ block main
         if (project.place.indexOf('研修館') !== -1) {
             text += 'include ../../images/2f.svg';
             text += '\n    '
-            text += makeStyle('west');
+            text += makeStyle('training-hall');
         } else if (project.place === '西ゾーン2階') {
             text += 'include ../../images/2f.svg';
             text += '\n    '
-            text += makeStyle('training-hall');
+            text += makeStyle('west');
         } else if (project.place.indexOf('2階') !== -1) {
             text += 'include ../../images/2f.svg';
             text += '\n    '
