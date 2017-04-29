@@ -52,6 +52,32 @@ body {
     }
 }
 
+table {
+    min-width: 300px;
+    width: 70%;
+    tr {
+        line-height: 2;
+        &:nth-child(odd) {
+            background-color: @clouds;
+        }
+        td {
+            &.name {
+                max-width: 500px;
+                a {
+                    display: block;
+                    width: 100%;
+                    &:hover {
+                        background-color: @silver;
+                    }
+                }
+            }
+            &.place {
+                width: 100px;
+            }
+        }
+    }
+}
+
 // For toppage
 
 header.top {
@@ -234,34 +260,6 @@ main.sub {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     white-space: nowrap;
-}
-
-// For projects page
-
-table.project {
-    min-width: 300px;
-    width: 70%;
-    tr {
-        line-height: 2;
-        &:nth-child(odd) {
-            background-color: @clouds;
-        }
-        td {
-            &.name {
-                max-width: 500px;
-                a {
-                    display: block;
-                    width: 100%;
-                    &:hover {
-                        background-color: @silver;
-                    }
-                }
-            }
-            &.place {
-                width: 100px;
-            }
-        }
-    }
 }
 
 // For greeting page

@@ -9,3 +9,13 @@ block main
     .image-wrapper: img(src='/images/day1-1.png' width='596px' height='425px')
     h2 常設タイムテーブル
     .image-wrapper: img(src='/images/day1-2.png' width='596px' height='425px')
+    h2 ODORIBA(11:50~13:10)タイムテーブル
+    table.odoriba
+        tr
+            th 時間
+            th 企画名
+        each project in odoriba.day1
+            tr
+                td.time= project.time
+                td.name= project.name
+    p (※あくまで目安です。状況次第で数分前後します。ご了承ください)

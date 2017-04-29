@@ -455,5 +455,108 @@
                 }
             ]
         }
-    ]
+    ],
+    "odoriba": {
+        "day1": [
+            {
+                "time": "11:50~11:55",
+                "name": "オープニング&紹介"
+            },
+            {
+                "time": "11:55~12:04",
+                "name": "IDLE M@STER CINDERELLA BOYS"
+            },
+            {
+                "time": "12:04~12:11",
+                "name": "BIG FIVE"
+            },
+            {
+                "time": "12:11~12:18",
+                "name": "RADIO GISH"
+            },
+            {
+                "time": "12:18~12:21",
+                "name": "WW"
+            },
+            {
+
+                "time": "12:21~12:28",
+                "name": "Poolside Boys"
+            },
+            {
+                "time": "12:28~12:36",
+                "name": "灘坂46"
+            },
+            {
+                "time": "12:36~12:43",
+                "name": "Perfect Apple Blossom"
+            },
+            {
+                "time": "12:44~12:52",
+                "name": "NXILE"
+            },
+            {
+                "time": "12:52~13:00",
+                "name": "BABYMENTAL "
+            },
+            {
+                "time": "13:00~13:07",
+                "name": "IMITATIONS from NXILE TRIBE "
+            },
+            {
+                "time": "13:07~13:10",
+                "name": "エンディング"
+            }
+        ],
+        "day2": [
+            {
+            "time": "13:30~13:33",
+            "name": "オープニング&紹介"
+            },
+            {
+            "time": "13:33~13:40",
+            "name": "Perfect Apple Blossom"
+            },
+            {
+            "time": "13:40~13:48",
+            "name": "NXILE"
+            },
+            {
+            "time": "13:48~13:56",
+            "name": "灘坂46"
+            },
+            {
+            "time": "13:56~14:03",
+            "name": "RADIO FISH"
+            },
+            {
+            "time": "14:03~14:06",
+            "name": "WW"
+            },
+            {
+            "time": "14:06~14:14",
+            "name": "BABYMENTAL"
+            },
+            {
+            "time": "14:14~14:23",
+            "name": "IDLE M@STER CINDERELLA BOYS"
+            },
+            {
+            "time": "14:23~14:30",
+            "name": "BIG FIVE"
+            },
+            {
+            "time": "14:30~14:37",
+            "name": "Poolside Boys"
+            },
+            {
+            "time": "14:37~14:43",
+            "name": "IMITATIONS from NXILE TRIBE "
+            },
+            {
+            "time": "14:43~14:45",
+            "name": "エンディング"
+            }
+        ]
+    }
 }
