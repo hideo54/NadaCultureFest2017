@@ -46,6 +46,7 @@ block main
             text += '\n    '
             text += makeStyle('stage');
         }
+        text += '\n    p 色付きの区域を選択するとそのエリアのページを見ることができます。'
         fs.writeFile(`src/projects/${project.address}.pug`, text);
     }
 }
