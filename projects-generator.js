@@ -15,7 +15,7 @@ block main
     p ${project.place}
     `;
         const makeStyle = (id) => {
-            return `style g#${id} > rect:first-child, g#${id} > polyline:first-child { fill: #faa95b !important; }`;
+            return `style .${id} { fill: #faa95b !important; }`;
         };
         if (project.place.indexOf('研修館') !== -1) {
             text += 'include ../../images/2f.svg';
