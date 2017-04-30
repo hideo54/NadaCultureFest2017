@@ -37,6 +37,9 @@ a {
 body {
     margin: 0;
     padding: 0;
+    header, main, footer {
+        display: block; // For the foolish browser -- IE
+    }
     main, footer {
         max-width: 800px;
         margin: 0 auto;
@@ -61,6 +64,10 @@ table {
             background-color: @clouds;
         }
     }
+}
+
+svg {
+    width: 100%;
 }
 
 // For toppage
@@ -262,14 +269,6 @@ img#kamura {
     max-width: 480px;
     height: auto;
     margin: 0 auto;
-}
-
-// For map
-
-section.all {
-    svg {
-        max-width: 500px;
-    }
 }
 
 // For access page
