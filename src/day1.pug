@@ -6,15 +6,33 @@ block head
 block main
     h1 1日目タイムテーブル
     h2 イベントタイムテーブル
-    .image-wrapper: img(src='/images/day1-1.png' width='596px' height='425px')
+    each booth in day1.event
+        h3= booth.name
+        table.timetable
+            tr
+                th 時間
+                th 企画名
+            each project in booth.table
+                tr
+                    td.time= project.time
+                    td.name= project.name
     h2 常設タイムテーブル
-    .image-wrapper: img(src='/images/day1-2.png' width='596px' height='425px')
+    each booth in day1.permanent
+        h3= booth.name
+        table.timetable
+            tr
+                th 時間
+                th 企画名
+            each project in booth.table
+                tr
+                    td.time= project.time
+                    td.name= project.name
     h2 ODORIBA(11:50~13:10)タイムテーブル
-    table.odoriba
+    table.timetable
         tr
             th 時間
             th 企画名
-        each project in odoriba.day1
+        each project in day1.odoriba
             tr
                 td.time= project.time
                 td.name= project.name

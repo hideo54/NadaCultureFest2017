@@ -60,21 +60,6 @@ table {
         &:nth-child(odd) {
             background-color: @clouds;
         }
-        td {
-            &.name {
-                max-width: 500px;
-                a {
-                    display: block;
-                    width: 100%;
-                    &:hover {
-                        background-color: @silver;
-                    }
-                }
-            }
-            &.place {
-                width: 100px;
-            }
-        }
     }
 }
 
@@ -253,17 +238,10 @@ header.sub {
     }
 }
 
-main.sub {
-    padding-top: 50px;
-}
-
 // For day 1 / 2 page
 
-.image-wrapper {
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    white-space: nowrap;
+td.time {
+    width: 100px;
 }
 
 // For greeting page
