@@ -16,6 +16,8 @@ block main
                 tr
                     td.time= project.time
                     td.name= project.name
+        if booth.comment !== null
+            p= booth.comment
     h2 常設タイムテーブル
     each booth in day2.permanent
         h3= booth.name
@@ -27,6 +29,8 @@ block main
                 tr
                     td.time= project.time
                     td.name= project.name
+        if booth.comment !== null
+            p= booth.comment
     h2 ODORIBA(13:30~14:45)タイムテーブル
     table.timetable
         tr
