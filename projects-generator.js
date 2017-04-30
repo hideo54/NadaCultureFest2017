@@ -3,15 +3,21 @@ const data = require('./data.json');
 
 for (section of data.projects) {
     for (project of section.contents) {
-let text = `extends ../_subpage.pug
+        let text = `extends ../_subpage.pug
 
 block head
     title ${project.name}
 
 block main
     h1 ${project.name}
-    p ${project.description}
-    h2 場所
+    h2 説明
+`;
+        if (project.name === "ODORIBA") {
+            text += `    ${project.description}\n`;
+        } else {
+            text += `    p ${project.description}\n`;
+        }
+        text += `    h2 場所
     p ${project.place}
     `;
         const makeMap = (floor, id) => {
