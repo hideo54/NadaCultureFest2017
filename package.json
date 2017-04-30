@@ -6,8 +6,9 @@
     "author": "hideo54",
     "license": "Apache-2.0",
     "scripts": {
-        "install": "yarn run projects && yarn run build && yarn run images && yarn run fonts",
+        "install": "yarn run projects && yarn run gallery && yarn run build && yarn run images && yarn run fonts",
         "projects": "mkdir src/projects/ ; node projects-generator.js",
+        "gallery": "node gallery-generator.js",
         "images": "cp -R images/ dist/images/",
         "fonts": "cp -R font-awesome/fonts/ dist/fonts/",
         "build": "gulp",
