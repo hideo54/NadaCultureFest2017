@@ -15,36 +15,44 @@ block main
     p ${project.place}
     `;
         const makeStyle = (id) => {
-            return `style g#${id} > rect:first-child, g#${id} > polyline:first-child { fill: #faa95b !important; }`
+            return `style g#${id} > rect:first-child, g#${id} > polyline:first-child { fill: #faa95b !important; }`;
         };
         if (project.place.indexOf('研修館') !== -1) {
             text += 'include ../../images/2f.svg';
-            text += '\n    '
+            text += '\n    ';
             text += makeStyle('training-hall');
         } else if (project.place === '西ゾーン2階') {
             text += 'include ../../images/2f.svg';
-            text += '\n    '
+            text += '\n    ';
             text += makeStyle('west');
         } else if (project.place.indexOf('2階') !== -1) {
             text += 'include ../../images/2f.svg';
-            text += '\n    '
+            text += '\n    ';
             text += makeStyle(project.address);
         } else if (project.place.indexOf('3階') !== -1) {
             text += 'include ../../images/3f.svg';
-            text += '\n    '
+            text += '\n    ';
             text += makeStyle(project.address);
         } else if (project.place.indexOf('4階') !== -1) {
             text += 'include ../../images/4f.svg';
-            text += '\n    '
+            text += '\n    ';
             text += makeStyle(project.address);
         } else if (project.place === '視聴覚教室') {
             text += 'include ../../images/2f.svg';
-            text += '\n    '
+            text += '\n    ';
             text += makeStyle('east');
         } else if (project.place === '中庭ステージ') {
             text += 'include ../../images/1f.svg';
-            text += '\n    '
+            text += '\n    ';
             text += makeStyle('stage');
+        } else if (project.place === '高校棟1階') {
+            text += 'include ../../images/1f.svg';
+            text += '\n    ';
+            text += makeStyle('concert');
+        } else if (['第1グラウンド', '新中庭'].indexOf(project.place) !== -1) {
+            text += 'include ../../images/1f.svg';
+            text += '\n    ';
+            text += makeStyle(project.address);
         }
         text += '\n    p 色付きの区域を選択するとそのエリアのページを見ることができます。'
         fs.writeFile(`src/projects/${project.address}.pug`, text);
