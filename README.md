@@ -7,7 +7,7 @@
     1. `wget http://fontawesome.io/assets/font-awesome-4.7.0.zip`
     1. `unzip font-awesome-4.7.0.zip`
     1. `mv font-awesome-4.7.0 font-awesome`
-1. `yarn run install`
+1. `yarn run install`  
 installスクリプトで行われること:
     1. 各企画pugファイルの生成( `yarn run projects` )
     1. gallerypugファイルの生成( `yarn run gallery` )
